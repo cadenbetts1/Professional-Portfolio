@@ -1,0 +1,260 @@
+:root {
+  --primary-color: rgb(167, 42, 42);
+  --secondary-color: rgb(120, 118, 118);
+  --tertiary-color: black;
+}
+
+/* Sets the universal box-sizing and margin and padding for whole document */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets the universal height of the html document */
+html {
+  height: 90%;
+}
+
+/* Universal body height, background color and the font for the whole page */
+body {
+  height: 100%;
+  background-color: var(--secondary-color);
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* The header informaton regarding to name of porfolio and tabs on the far right About Me, Work, Contact, Resume  */
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  overflow: hidden;
+}
+
+/* Sets the header h1 color to secondary and also changes the margin and font size */
+header h1 {
+  color: var(--secondary-color);
+  margin: 5px 10px 5px 30px;
+  font-size: 50px;
+}
+
+/* All of the styling related to About Me, Work, Resume */
+header nav {
+  padding-top: 20px;
+  margin-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Changes the the header nav to display to inline and margin to the left 25pxt */
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* Allows for the tertiary-color and no text decorations  */
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+/* Changes the background to the priimary color and adds a border radius around the box. */
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* changes the paragraph font size and width and padding. Then positions it to the center  */
+p {
+  font-size: 24px;
+  padding: 5px 35px 0 20px;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Changes the position and margin of the profile pic */
+.profile-pic {
+  position: relative;
+  margin: 12px;
+
+}
+
+/* Control for the first section of code, displays in the flex and wraps the text and position and padding */
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Section Detail changes the margin and padding-button width and displayt */
+.section-detail {
+  margin: 20px auto;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+}
+
+/* Changes the title to bigger font size and then changes the position and borderign around it */
+.section-title {
+  font-size: 48px;
+  display: inline-block;
+  border-right: 5px solid;
+  margin-right: 35px;
+  color: var(--primary-color);
+  text-align: right;
+  padding: 30px;
+  flex-basis: 25%;
+}
+
+/* Changes primary border to primary coloryt */
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+/* Changes work-container display and makes it wrap with a flex  */
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 66%;
+}
+
+/* Item-detail position and margin and width on document. */
+.item-detail {
+  position: relative;
+  margin: 12px;
+  width: fit-content;
+}
+
+/* changes background color to primary color for item-detail */
+.item-detail:hover {
+  background-color: var(--primary-color);
+}
+
+/* changes the border to a solid with 5px with the tertiary color */
+img {
+  border: 5px solid var(--tertiary-color);
+}
+
+/* bottom-left to tertiary color and font size and position with padding and bordering around it */
+.bottom-left {
+  position: absolute;
+  padding: 5px;
+  bottom: 16px;
+  left: 1px;
+  text-align: left;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: var(--tertiary-color);
+}
+
+/* Changes the zoom settings for 980px device */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* changes the universal settings based on device as well as width alignment and margin */
+  header h1 {
+    width: 100%;
+    text-align: center;
+    margin: 5px
+  }
+
+  /* changes device settings for width and marign and alignment of property */
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* header nav when it comes to device changes font */
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  /* paragraph when using device to different flex and alignment  */
+  p {
+    flex: 2 100%;
+    text-align: left;
+    justify-content: left;
+  }
+
+}
+
+/* changes settings to work on different device 768px */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  /* changes settings to work on different device and the colum for flex direction */
+  .section-detail {
+    flex-direction: column;
+  }
+
+  /*  changes settings to work on different device and the colum for font size alignment direction and border padding */
+  .section-title {
+    font-size: 48px;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 5px solid;
+    border-right: none;
+    padding: 15px;
+    margin: 0;
+  }
+
+  /*  changes settings to work on different device and the colum for font size alignment direction and border padding */
+  p {
+    flex-direction: column;
+    justify-content: center;
+    display: contents;
+    padding: 10px
+  }
+
+  /*  changes settings to work on different device and the colum for profile pic*/
+  .profile-pic {
+    justify-content: center;
+    height: 50px widht 50px;
+  }
+
+  /* changes settings to work on different device and the colum for item-detail */
+  .item-detail {
+    flex: 2 100%;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+  }
+
+  /* changes settings to work on different device and the colum for item-detail image  */
+  .item-detail img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+  }
+
+  /* changes settings to work on different device and the colum for a */
+  a {
+    flex-direction: column;
+    justify-content: center;
+    display: contents;
+    padding: 10px
+  }
+}
