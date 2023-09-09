@@ -36,7 +36,9 @@ Screenshots
 
 <img width="1440" alt="Screenshot 2023-08-30 at 6 53 49 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/ae0a4b83-0a60-4d6a-aaae-46290359ca07">
 
-<img width="1440" alt="Screenshot 2023-08-30 at 6 54 13 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/7c4962f5-20e3-4db4-96e7-93d94e823f61">
+<img width="1426" alt="Screenshot 2023-09-08 at 7 28 43 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/782e516f-b6a8-49eb-9224-7cf03fd24bc8">
+
+<img width="1440" alt="Screenshot 2023-09-08 at 7 29 11 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/72082d71-c502-470c-9d29-f1b8035bb67d">
 
 
 Technologies used
