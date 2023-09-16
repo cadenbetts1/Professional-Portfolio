@@ -51,6 +51,6 @@ https://cadenbetts1.github.io/Professional-Portfolio/
 
 
 
-## 🔗 Links
+Link to Linkedin.com
 
 https://www.linkedin.com/in/cadenmbetts/
