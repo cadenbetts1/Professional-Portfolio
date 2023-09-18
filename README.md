@@ -30,15 +30,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 Screenshots
-<img width="1440" alt="Screenshot 2023-08-30 at 6 52 21 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/7a464302-6581-49a8-a7b6-7206b4b9eb04">
+<img width="1440" alt="Screenshot 2023-09-17 at 11 16 17 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/5fa8fb82-5874-4b6f-8477-b1a91849cd3d">
 
-<img width="1440" alt="Screenshot 2023-08-30 at 6 52 37 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/7f35c428-4e88-42ae-915c-181f6cfbfac9">
-
-<img width="1440" alt="Screenshot 2023-08-30 at 6 53 49 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/ae0a4b83-0a60-4d6a-aaae-46290359ca07">
-
-<img width="1426" alt="Screenshot 2023-09-08 at 7 28 43 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/782e516f-b6a8-49eb-9224-7cf03fd24bc8">
-
-<img width="1440" alt="Screenshot 2023-09-08 at 7 29 11 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/72082d71-c502-470c-9d29-f1b8035bb67d">
+<img width="1440" alt="Screenshot 2023-09-17 at 11 16 45 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/2cbe5952-a4ce-42f1-8b21-73e88b59182d">
 
 
 Technologies used
