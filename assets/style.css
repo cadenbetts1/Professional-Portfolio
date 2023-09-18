@@ -1,260 +1,360 @@
-:root {
-  --primary-color: rgb(167, 42, 42);
-  --secondary-color: rgb(120, 118, 118);
-  --tertiary-color: black;
-}
 
-/* Sets the universal box-sizing and margin and padding for whole document */
+
+:root {
+  --primary-color:black;
+}
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-/* Sets the universal height of the html document */
-html {
-  height: 90%;
-}
-
-/* Universal body height, background color and the font for the whole page */
 body {
-  height: 100%;
-  background-color: var(--secondary-color);
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+  }
 
-/* The header informaton regarding to name of porfolio and tabs on the far right About Me, Work, Contact, Resume  */
-.header {
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  overflow: hidden;
-}
+/* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  }
 
-/* Sets the header h1 color to secondary and also changes the margin and font size */
 header h1 {
-  color: var(--secondary-color);
-  margin: 5px 10px 5px 30px;
-  font-size: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+  }
+
+header nav {
+    margin: 7px 0;
+  }
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  }
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+  }
+  
+section {
+    padding :10px;
 }
 
-/* All of the styling related to About Me, Work, Resume */
-header nav {
-  padding-top: 20px;
-  margin-right: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 24px;
+
+/*apply style to hero image*/
+.hero{
+  height: 400px;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+  
 }
 
-/* Changes the the header nav to display to inline and margin to the left 25pxt */
-header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
+/*Add employees photo*/
+.image2 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  border: 3px var(--primary-color) solid;
+  height:150px;
+  width: 150px;
 }
 
-/* Allows for the tertiary-color and no text decorations  */
-a {
-  color: var(--tertiary-color);
-  text-decoration: none;
+.hero h2 {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-top: 300px;
+  background-color:white;
 }
 
-/* Changes the background to the priimary color and adds a border radius around the box. */
-header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
-}
 
-/* changes the paragraph font size and width and padding. Then positions it to the center  */
-p {
-  font-size: 24px;
-  padding: 5px 35px 0 20px;
-  width: 50%;
-  justify-content: space-evenly;
+/*Work section style*/
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 50px;  
+  width: 90%;
   align-items: center;
 }
 
-/* Changes the position and margin of the profile pic */
-.profile-pic {
-  position: relative;
-  margin: 12px;
-
-}
-
-/* Control for the first section of code, displays in the flex and wraps the text and position and padding */
-section {
+.flex-row {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin: 10px;
+  justify-content: left;
 }
 
-/* Section Detail changes the margin and padding-button width and displayt */
-.section-detail {
-  margin: 20px auto;
-  padding-bottom: 50px;
-  width: 100%;
-  display: flex;
-}
-
-/* Changes the title to bigger font size and then changes the position and borderign around it */
 .section-title {
-  font-size: 48px;
-  display: inline-block;
-  border-right: 5px solid;
-  margin-right: 35px;
-  color: var(--primary-color);
-  text-align: right;
-  padding: 30px;
-  flex-basis: 25%;
+  font-size: 35px;
+  font-family:cursive;
+  color: black;
+  margin: 0 0 0 80px;
+  width: 50%;
 }
 
-/* Changes primary border to primary coloryt */
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-/* Changes work-container display and makes it wrap with a flex  */
-.work-container {
+.step-info{
+  flex :2 20%;
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 66%;
+  align-items: center;
 }
 
-/* Item-detail position and margin and width on document. */
-.item-detail {
-  position: relative;
-  margin: 12px;
-  width: fit-content;
+.vl-border1 {
+  border-right: 3px solid black;
+  height: 150px;
+  flex: 2 1%;
 }
 
-/* changes background color to primary color for item-detail */
-.item-detail:hover {
-  background-color: var(--primary-color);
+.step-text {
+  flex: 25;
 }
 
-/* changes the border to a solid with 5px with the tertiary color */
-img {
-  border: 5px solid var(--tertiary-color);
-}
-
-/* bottom-left to tertiary color and font size and position with padding and bordering around it */
-.bottom-left {
-  position: absolute;
-  padding: 5px;
-  bottom: 16px;
-  left: 1px;
+.step-text p {
+  color: var(--primary-color);
+  font-size: 15px;
   text-align: left;
-  font-size: 12px;
-  color: #ffffff;
-  background-color: var(--tertiary-color);
+  line-height: 1.3;
+  margin-left: 30px;
+  width: 100%;
 }
 
-/* Changes the zoom settings for 980px device */
-@media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
+.vl-border2{
+  border-right: 3px solid black;
+  height: 450px;
+  flex: 2 5%;  
+  
+}
+
+.container{
+  flex:80;
+}
+
+.container {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center; 
+  margin-left: 15px;
+  width: 80%;  
+    
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 10vw);
+  grid-gap: 15px;
+  margin-left: 30px;     
+  
+}
+
+.gallery__item{
+position: relative;
+}
+.gallery__img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border: solid 1px var(--primary-color);  
+}
+
+figcaption{
+position: absolute;
+margin-left: 5px;
+margin-top: -20%;
+font-size: 12px;
+font-style: italic;
+font-weight: bold;
+color:  rgb(22, 44, 44);
+border: solid 1px var(--primary-color);
+background-color: white;
+}
+
+.gallery__item--1 {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+position: relative;
+
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   }
 
-  /* changes the universal settings based on device as well as width alignment and margin */
+.gallery__item--3 {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+
+.gallery__item--4 {
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 4;
+}
+
+.gallery__item--5 {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+
+
+/*About section style*/
+.vl-border3 {
+  border-right: 3px solid black;
+  height: 100px;
+  flex: 2 5%;
+ 
+}
+
+.contact-info {
+  flex: 150;
+}
+.contact-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+  list-style: none;
+  margin-left: 15px;
+  width: 100%;  
+  }
+
+.contact-info ul li a {
+    margin: 0 30px;
+    font-size: 18px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+  }
+
+.resume{
+margin: 20px 20px;
+color: #024e76;
+}
+  
+/*Code for media query*/
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+
   header h1 {
     width: 100%;
     text-align: center;
-    margin: 5px
   }
 
-  /* changes device settings for width and marign and alignment of property */
   header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    flex-direction: row;
+    line-height: 1.5;
   }
 
-  /* header nav when it comes to device changes font */
   header nav ul li a {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
   }
 
-  /* paragraph when using device to different flex and alignment  */
-  p {
-    flex: 2 100%;
-    text-align: left;
+  .hero{
+    background-size: cover;
+  }
+
+  .image2{
+    height: 100px;
+    width: 100px;
+  }
+  .hero h2 {      
+    font-size: 10px;
+    margin-top: 350px;
+    }
+
+  .step-text p{
+      width: 85%;
+    }
+
+  .section-title {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .vl-border1 {      
+    height: 350px;     
+  }
+
+.vl-border2{
+  height: 280px;     
+}  
+  .container{
+    width: 100%;
+  }
+  .contact-info ul {     
+    width: 100%;
     justify-content: left;
+    flex-direction: column;      
+}
+  
+  .contact-info ul li a {
+      font-size: 18px;
+      line-height: 2;  
+      font-weight: bold;
+}
+
+  .vl-border3{
+      height: 180px;
+  }
+
+  .image2 {
+      top:200px;
+  }
+    
+  figcaption{
+      margin-left: 5px;
+      margin-top: -45%;
+      font-size: 5px;
   }
 
 }
 
-/* changes settings to work on different device 768px */
-@media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  /* changes settings to work on different device and the colum for flex direction */
-  .section-detail {
-    flex-direction: column;
-  }
-
-  /*  changes settings to work on different device and the colum for font size alignment direction and border padding */
-  .section-title {
-    font-size: 48px;
-    text-align: center;
-    flex-direction: column;
-    border-bottom: 5px solid;
-    border-right: none;
-    padding: 15px;
-    margin: 0;
-  }
-
-  /*  changes settings to work on different device and the colum for font size alignment direction and border padding */
-  p {
-    flex-direction: column;
-    justify-content: center;
-    display: contents;
-    padding: 10px
-  }
-
-  /*  changes settings to work on different device and the colum for profile pic*/
-  .profile-pic {
-    justify-content: center;
-    height: 50px widht 50px;
-  }
-
-  /* changes settings to work on different device and the colum for item-detail */
-  .item-detail {
-    flex: 2 100%;
-    text-align: left;
-    justify-content: left;
-    display: flex;
-  }
-
-  /* changes settings to work on different device and the colum for item-detail image  */
-  .item-detail img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 90%;
-  }
-
-  /* changes settings to work on different device and the colum for a */
-  a {
-    flex-direction: column;
-    justify-content: center;
-    display: contents;
-    padding: 10px
-  }
+.Title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; 
 }
