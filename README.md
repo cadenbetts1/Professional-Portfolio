@@ -30,9 +30,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 Screenshots
-<img width="1440" alt="Screenshot 2023-09-17 at 11 16 17 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/5fa8fb82-5874-4b6f-8477-b1a91849cd3d">
+<img width="1116" alt="Screenshot 2023-09-18 at 6 08 59 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/9202e3d9-edeb-4da8-8fe6-1ad92e1d277a">
 
-<img width="1440" alt="Screenshot 2023-09-17 at 11 16 45 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/2cbe5952-a4ce-42f1-8b21-73e88b59182d">
+<img width="1118" alt="Screenshot 2023-09-18 at 6 09 24 PM" src="https://github.com/cadenbetts1/Professional-Portfolio/assets/132243976/d8c307e4-16ed-4cd4-bae5-28ebdee70e26">
 
 
 Technologies used
